@@ -166,7 +166,13 @@ export default function Home() {
               <div className="absolute inset-5 rounded-[45%] border border-violet-300/20" />
               <div className="absolute inset-10 rounded-[45%] border border-fuchsia-300/20" />
               <div className="relative px-8 text-center">
-                <div className="mx-auto mb-5 flex h-32 w-32 items-center justify-center rounded-full border border-violet-200/30 bg-gradient-to-br from-violet-500/30 to-fuchsia-500/20 text-6xl">✦</div>
+              <div className="mx-auto mb-5 h-40 w-40 overflow-hidden rounded-full border-2 border-violet-300/50 shadow-lg shadow-violet-500/20">
+  <img
+    src="/images/foto.jpeg"
+    alt="Fotografía de Amy"
+    className="h-full w-full object-cover"
+  />
+</div>
                 <p className="text-sm uppercase tracking-[.25em] text-violet-300">Mi mundo</p>
                 <p className="mt-3 text-2xl font-bold">Ideas que se<br /><span className="gradient-text">convierten en proyectos.</span></p>
                 <p className="mt-4 text-sm text-violet-100/60">Aquí comienza mi historia.</p>
