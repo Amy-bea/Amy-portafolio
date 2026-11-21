@@ -147,12 +147,19 @@ export default function Home() {
               <a className="primary-button" href="#proyectos"><Rocket size={17} /> Ver mis proyectos <ArrowRight size={16} /></a>
               <a className="secondary-button" href="#sobre-mi">Conóceme <ArrowDown size={16} /></a>
             </div>
-            <div className="mt-8 flex gap-4 text-violet-200">
-              <a aria-label="GitHub" href="https://github.com/" target="_blank" rel="noreferrer"><Github /></a>
-              <a aria-label="LinkedIn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><Linkedin /></a>
-              <a aria-label="Correo" href="#contacto"><Mail /></a>
+                       <div className="mt-8 flex gap-4 text-violet-200">
+              <a aria-label="GitHub" href="https://github.com/Amy-bea" target="_blank" rel="noreferrer">
+                <Github />
+              </a>
+              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/amy-beatriz-mendoza-salazar-36073544b/" target="_blank" rel="noreferrer">
+                <Linkedin />
+              </a>
+              <a aria-label="Correo" href="mailto:mendozasalazaramybeatriz@gmail.com">
+                <Mail />
+              </a>
             </div>
           </div>
+          
           <div className="relative mx-auto w-full max-w-[390px]">
             <div className="absolute inset-5 rounded-[45%] bg-gradient-to-br from-violet-600/40 to-fuchsia-500/20 blur-3xl" />
             <div className="panel glow relative flex aspect-[4/5] items-center justify-center overflow-hidden border-violet-300/25">
@@ -275,7 +282,9 @@ export default function Home() {
             <p className="section-kicker">06 · Hablemos</p>
             <h2 className="section-title mt-3 font-bold">¿Tienes una idea? <span className="gradient-text">Conectemos.</span></h2>
             <p className="mt-5 max-w-sm leading-7 text-violet-100/60">Estoy abierta a aprender, compartir ideas y conocer nuevas oportunidades.</p>
-            <a href="mailto:tu-correo@ejemplo.com" className="mt-7 inline-flex items-center gap-3 text-violet-200"><Mail size={19} /> Agrega aquí tu correo electrónico</a>
+            <a href="mailto:mendozasalazaramybeatriz@gmail.com" className="mt-7 inline-flex items-center gap-3 text-violet-200">
+  <Mail size={19} /> mendozasalazaramybeatriz@gmail.com
+</a>
           </div>
           <form onSubmit={handleSubmit} className="panel grid gap-4 p-6 sm:p-8">
             <label className="grid gap-2 text-sm text-violet-100/75">Nombre completo<input required name="name" minLength={2} maxLength={80} placeholder="Tu nombre" className="rounded-xl border border-white/10 bg-black/20 px-4 py-3 outline-none focus:border-violet-400" /></label>
