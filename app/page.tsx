@@ -7,50 +7,46 @@ import {
 } from "lucide-react";
 import { FormEvent, useState } from "react";
 
+
 const projects = [
   {
-    name: "SAFEN",
-    category: "Proyecto web · Impacto social",
-    description: "Plataforma propuesta para conectar reportes de emergencias, zonas afectadas y ayuda para comunidades.",
-    tags: ["HTML", "CSS", "JavaScript", "Leaflet"],
-    icon: "🛟",
+    name: "Regresión lineal",
+    category: "Análisis de datos",
+    description: "Actividad para explorar la relación entre datos y comprender cómo funciona la regresión lineal para realizar predicciones.",
+    tags: ["Python", "Regresión lineal"],
+    icon: "📈",
   },
   {
-    name: "HYDRA",
-    category: "Aplicación · Recaudación",
-    description: "Idea de aplicación enfocada en apoyar iniciativas de acceso al agua mediante donaciones.",
-    tags: ["Diseño", "Desarrollo web"],
-    icon: "💧",
-  },
-  {
-    name: "Music Tours",
-    category: "Dashboard · Análisis de datos",
-    description: "Panel para explorar información de conciertos, artistas, países y entradas vendidas.",
-    tags: ["Excel", "Power BI"],
-    icon: "🎧",
-  },
-  {
-    name: "Hotspots Comerciales",
-    category: "Análisis · Datos",
-    description: "Proyecto académico orientado al análisis de ubicaciones y oportunidades comerciales.",
-    tags: ["Análisis de datos", "Visualización"],
-    icon: "📍",
+    name: "Laberinto y árboles de decisión",
+    category: "Algoritmos · Toma de decisiones",
+    description: "Actividad enfocada en la resolución de un laberinto y el aprendizaje de los árboles de decisión.",
+    tags: ["Algoritmos", "Árboles de decisión"],
+    icon: "🧩",
   },
   {
     name: "AI Challenge",
     category: "Inteligencia artificial",
-    description: "Reto académico para explorar los algoritmos K-Means y KNN y analizar sus resultados.",
-    tags: ["Machine Learning", "Python"],
+    description: "Reto académico para explorar los algoritmos K-Means y KNN y comprender su aplicación en el análisis de datos.",
+    tags: ["Machine Learning", "K-Means", "KNN"],
     icon: "🤖",
   },
   {
-    name: "Laberinto",
-    category: "Algoritmos · Árboles de decisión",
-    description: "Actividad para estudiar la resolución de un laberinto mediante algoritmos y toma de decisiones.",
-    tags: ["Algoritmos", "Python"],
-    icon: "🧩",
+    name: "Hotspots Comerciales",
+    category: "Análisis · Datos",
+    description: "Proyecto académico orientado al análisis de ubicaciones comerciales para identificar zonas y oportunidades de interés.",
+    tags: ["Análisis de datos", "Visualización"],
+    icon: "📍",
+  },
+  {
+    name: "Desarrollo de aplicaciones",
+    category: "Desarrollo web · Next.js",
+    description: "Actividades de desarrollo de aplicaciones trabajando en el frontend, backend, componentes, endpoints y validación de APIs.",
+    tags: ["React", "Next.js", "TypeScript", "API"],
+    icon: "💻",
   },
 ];
+
+
 
 const skills = [
   { name: "Python", level: "En aprendizaje", icon: "🐍" },
