@@ -162,14 +162,14 @@ export default function Home() {
               <div className="absolute inset-5 rounded-[45%] border border-violet-300/20" />
               <div className="absolute inset-10 rounded-[45%] border border-fuchsia-300/20" />
               <div className="relative px-8 text-center">
-              <div className="mx-auto mb-5 h-40 w-40 overflow-hidden rounded-full border-2 border-violet-300/50 shadow-lg shadow-violet-500/20">
+ <div className="mx-auto mb-5 h-40 w-40 overflow-hidden rounded-full border-2 border-violet-300/50 shadow-lg shadow-violet-500/20">
   <img
-    src="/images/foto.jpeg"
+    src="/images/Retrato profesional con diadema perlada.png"
     alt="Fotografía de Amy"
     className="h-full w-full object-cover"
   />
 </div>
-                <p className="text-sm uppercase tracking-[.25em] text-violet-300">Mi mundo</p>
+ <p className="text-sm uppercase tracking-[.25em] text-violet-300">Mi mundo</p>
                 <p className="mt-3 text-2xl font-bold">Ideas que se<br /><span className="gradient-text">convierten en proyectos.</span></p>
                 <p className="mt-4 text-sm text-violet-100/60">Aquí comienza mi historia.</p>
               </div>
@@ -208,27 +208,76 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experiencia" className="section bg-white/[.018]">
-        <div className="container">
-          <p className="section-kicker">02 · Mi recorrido</p>
-          <h2 className="section-title mt-3 font-bold">Experiencia y <span className="gradient-text">aprendizaje.</span></h2>
-          <div className="mt-10 grid gap-5 md:grid-cols-2">
-            <article className="panel p-7">
-              <div className="mb-5 inline-flex rounded-xl bg-violet-400/10 p-3 text-violet-200"><GraduationCap /></div>
-              <p className="text-sm text-violet-300">Formación académica</p>
-              <h3 className="mt-2 text-xl font-bold">Centro Escolar General Francisco Morazán</h3>
-              <p className="mt-2 text-sm leading-6 text-violet-100/60">Estudios de Bachillerato General.</p>
-            </article>
-            <article className="panel p-7">
-              <div className="mb-5 inline-flex rounded-xl bg-fuchsia-400/10 p-3 text-fuchsia-200"><Laptop /></div>
-              <p className="text-sm text-fuchsia-300">Formación complementaria</p>
-              <h3 className="mt-2 text-xl font-bold">Programa ¡Supérate! · Fundación Frech</h3>
-              <p className="mt-2 text-sm leading-6 text-violet-100/60">Aprendizaje de inglés, informática y valores.</p>
-            </article>
-          </div>
-          <p className="mt-5 text-sm text-violet-100/45">Esta sección se ampliará con tus actividades, responsabilidades y logros confirmados.</p>
-        </div>
-      </section>
+
+<section id="experiencia" className="section">
+  <div className="container">
+    <div className="mb-12 text-center">
+      <p className="section-kicker">Mi recorrido</p>
+      <h2 className="section-title">Experiencias y participación</h2>
+      <p className="muted mt-4">
+        Experiencias en las que he desarrollado mi creatividad,
+        trabajado en equipo y aplicado mis conocimientos.
+      </p>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2">
+
+      <div className="panel overflow-hidden p-5">
+        <img src="/images/hackaton.jpg.jpg" alt="Hackathon"
+          className="mb-5 h-44 w-full rounded-2xl object-cover object-[center_10%]" />
+        <h3 className="mb-2 text-xl font-bold">Hackathon</h3>
+        <p className="muted leading-relaxed">
+          Participación en una experiencia de innovación,
+          trabajo en equipo y desarrollo de ideas para
+          proponer soluciones a diferentes desafíos.
+        </p>
+      </div>
+
+      <div className="panel overflow-hidden p-5">
+        <img src="/images/expotech.jpg.jpg" alt="ExpoTech"
+          className="mb-5 h-44 w-full rounded-2xl object-cover" />
+        <h3 className="mb-2 text-xl font-bold">ExpoTech</h3>
+        <p className="muted leading-relaxed">
+          Participación en ExpoTech con SAFEN, una propuesta
+          tecnológica para conectar comunidades afectadas
+          por desastres naturales con personas dispuestas a ayudar.
+        </p>
+      </div>
+
+      <div className="panel overflow-hidden p-5">
+        <img src="/images/safen.jpg.png" alt="Proyecto SAFEN"
+          className="mb-5 h-44 w-full rounded-2xl object-cover" />
+        <h3 className="mb-2 text-xl font-bold">SAFEN</h3>
+        <p className="muted leading-relaxed">
+          Desarrollo de una plataforma web enfocada en la
+          atención de emergencias, con reportes, mapas de
+          zonas afectadas, albergues y apoyo comunitario.
+        </p>
+        <a
+  href="https://TU-LINK-DE-SAFEN"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-flex items-center gap-2 text-pink-500 font-semibold hover:text-pink-600 transition"
+>
+  Visitar página de SAFEN →
+</a>
+      </div>
+
+      <div className="panel overflow-hidden p-5">
+        <img src="/images/expodelogros.jpg.jpg" alt="Proyecto HYDRA"
+      className="mb-5 h-44 w-full rounded-2xl object-cover object-[center_25%]"  />
+        <h3 className="mb-2 text-xl font-bold">HYDRA</h3>
+        <p className="muted leading-relaxed">
+          Desarrollo de una propuesta de aplicación para
+          apoyar la recaudación de fondos, utilizando la
+          tecnología como herramienta para generar un impacto social.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <section id="proyectos" className="section">
         <div className="container">
