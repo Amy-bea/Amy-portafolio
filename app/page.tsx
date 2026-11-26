@@ -14,7 +14,6 @@ const projects = [
     category: "Análisis de datos",
     description: "Actividad para explorar la relación entre datos y comprender cómo funciona la regresión lineal para realizar predicciones.",
     tags: ["Python", "Regresión lineal"],
-    icon: "📈",
     image: "/images/regresion lineal.png",
     
   },
@@ -32,7 +31,7 @@ const projects = [
     description: "Proyecto académico orientado al análisis de ubicaciones comerciales para identificar zonas y oportunidades de interés.",
     tags: ["Análisis de datos", "Visualización"],
     icon: "📍",
-    image: "/images/hotspots.png",
+    image: "/images/hotspots.png.jpeg",
    
   },
   {
@@ -278,65 +277,31 @@ export default function Home() {
 </section>
 
 
-<section id="proyectos" className="section">
-  <div className="container">
-    <div className="flex flex-wrap items-end justify-between gap-4">
-      <div>
-        <p className="section-kicker">03 · Lo que he creado</p>
-        <h2 className="section-title mt-3 font-bold">
-          Mis <span className="gradient-text">proyectos.</span>
-        </h2>
-      </div>
-      <p className="max-w-md text-sm leading-6 text-violet-100/55">
-        Una selección de proyectos y actividades académicas
-        que reflejan mi aprendizaje y creatividad.
-      </p>
-    </div>
-
-    <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-      {projects.map((project) => (
-        <article
-          key={project.name}
-          className="panel project-card overflow-hidden"
-        >
-          <div className="h-48 overflow-hidden bg-white/5">
-            <img
-              src={project.image}
-              alt={`Evidencia de ${project.name}`}
-              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-            />
+      <section id="proyectos" className="section">
+        <div className="container">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div><p className="section-kicker">03 · Lo que he creado</p><h2 className="section-title mt-3 font-bold">Mis <span className="gradient-text">proyectos.</span></h2></div>
+            <p className="max-w-md text-sm leading-6 text-violet-100/55">Una selección de proyectos y actividades académicas. Pronto agregaremos imágenes, evidencias y enlaces a sus repositorios.</p>
           </div>
-
-          <div className="p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-violet-300">
-              {project.category}
-            </p>
-
-            <h3 className="mt-2 text-xl font-bold">
-              {project.name}
-            </h3>
-
-            <p className="mt-3 min-h-[76px] text-sm leading-6 text-violet-100/60">
-              {project.description}
-            </p>
-
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-violet-300/15 bg-violet-300/10 px-3 py-1 text-xs text-violet-200"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {projects.map((project, index) => (
+              <article key={project.name} className="panel project-card overflow-hidden">
+                <div className="flex h-44 items-center justify-center bg-gradient-to-br from-violet-600/25 via-indigo-500/10 to-fuchsia-500/20 text-6xl">
+                  <span>{project.icon}</span>
+                  <span className="sr-only">Proyecto {index + 1}</span>
+                </div>
+                <div className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-violet-300">{project.category}</p>
+                  <h3 className="mt-2 text-xl font-bold">{project.name}</h3>
+                  <p className="mt-3 min-h-[76px] text-sm leading-6 text-violet-100/60">{project.description}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">{project.tags.map(tag => <span key={tag} className="rounded-full border border-violet-300/15 bg-violet-300/10 px-3 py-1 text-xs text-violet-200">{tag}</span>)}</div>
+                  <p className="mt-5 flex items-center gap-2 text-xs text-violet-300/65"><ArrowUpRight size={14} /> Evidencias y repositorio próximamente</p>
+                </div>
+              </article>
+            ))}
           </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       <section id="habilidades" className="section bg-white/[.018]">
         <div className="container">
